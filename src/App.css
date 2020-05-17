@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+main {
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+h1 {
+  font-size: 160px;
+  color: white;
+}
+span {
+  color: #f484c5;
+}
+h2 {
+  font-size: 60px;
+  color: #bf9cf0;
+}
+
+a {
+  font-size: 20px;
+  color: #ff00ae;
+}
+
+a:hover {
+  font-size: 30px;
+  transition: 0.1s all linear;
+}

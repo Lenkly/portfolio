@@ -35,6 +35,16 @@ export default function GlobalStyles() {
           font-size: 60px;
           color: #bf9cf0;
         }
+        ,
+        a {
+          font-size: 20px;
+          color: #ff00ae;
+        }
+        ,
+        a:hover {
+          font-size: 30px;
+          transition: 0.1s all linear;
+        }
       `}
     />
   );
