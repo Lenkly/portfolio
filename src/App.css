@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/HelveticaNeue.ttf');
+}
+
 *,
 *:before,
 *:after {
@@ -5,35 +10,34 @@
 }
 
 body {
-  background-image: url("./bg.png");
+  background-image: url('./assets/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0;
 }
 
 main {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   color: white;
+  margin: 0 55px;
 }
 
 h1 {
-  font-size: 160px;
+  font-size: 120px;
   color: white;
 }
 span {
   color: #f484c5;
 }
 h2 {
-  font-size: 60px;
+  font-size: 45px;
   color: #bf9cf0;
 }
 
@@ -43,6 +47,11 @@ a {
 }
 
 a:hover {
-  font-size: 30px;
   transition: 0.1s all linear;
+  transform: translateY(-2px);
+}
+
+p {
+  font-size: 20px;
+  color: white;
 }

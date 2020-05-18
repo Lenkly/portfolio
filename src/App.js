@@ -1,23 +1,24 @@
-import React from "react";
-import styled from "@emotion/styled";
-import logo from "./logo.svg";
-import spin from "./animations";
-import "./App.css";
+import React from 'react';
+import styled from '@emotion/styled';
+import AppHeader from './components/AppHeader';
+import About from './components/About';
+import './App.css';
 
-const Logospin = styled.img`
-  height: 40vmin;
-  pointer-events: none;
-  animation: ${spin} infinite 5s linear;
-`;
+// const Logospin = styled.img`
+//   height: 40vmin;
+//   pointer-events: none;
+//   animation: ${spin} infinite 5s linear;
+// `;
 
 function App() {
   return (
     <div>
+      <AppHeader />
       <main>
-        <Logospin src={logo} alt="logo" />
         <h1 className="heading">
-          <span>Hello</span> Bitches
+          <span>web</span>developer
         </h1>
+        <About />
         <a
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           target="_blank"
