@@ -9,7 +9,7 @@ const SVG = styled.svg`
 
 const Octocat = () => {
   return (
-    <SVG viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <SVG viewBox="5 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M38.2197 10C22.1972 10 9.21973 23.0849 9.21973 39.2236C9.21973 52.138
       17.5282 63.0895 29.0485 66.9495C30.4985 67.2247 31.0301 66.3212 31.0301
