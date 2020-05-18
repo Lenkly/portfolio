@@ -10,13 +10,13 @@ const TextBox = styled.div`
   align-items: center;
 `;
 
-export default function About() {
+export default function Contact() {
   return (
     <Content>
       <div>hallo</div>
       <TextBox>
         <h2>
-          <span>&#123; </span>about<span> &#125;</span>
+          <span>&#123; </span>get a grip!<span> &#125;</span>
         </h2>
         <p>
           &lt;<span>p</span>&gt; Lorem ipsum dolor sit amet, consetetur

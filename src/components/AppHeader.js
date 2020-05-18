@@ -6,7 +6,7 @@ import Email from '../assets/Email';
 
 const Header = styled.header`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
   margin: 0 55px;
   height: 100px;
@@ -18,12 +18,13 @@ const Header = styled.header`
 const Title = styled.div`
   font-family: 'Helvetica Neue';
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 30px;
   color: rgba(255, 255, 255, 0.7);
 `;
 
 const Links = styled.div`
   display: flex;
+  margin-right: inherit;
 `;
 
 const Link = styled.button`
