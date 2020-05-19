@@ -1,5 +1,13 @@
 import React from 'react';
 import { Content, TextBox, CopyText } from './Gridbox';
+import styled from '@emotion/styled';
+import hold from '../assets/placeholder.png';
+
+const Placeholder = styled.img`
+  width: 600px;
+  height: auto;
+  align-self: center;
+`;
 
 export default function Idea() {
   return (
@@ -30,7 +38,7 @@ export default function Idea() {
           &gt;
         </p>
       </TextBox>
-      <div>hallo</div>
+      <Placeholder src={hold} />
     </Content>
   );
 }

@@ -9,6 +9,7 @@ export const Content = styled.section`
 
 export const TextBox = styled.div`
   align-items: center;
+  line-height: 1.5;
 `;
 
 export const CopyText = styled.div`

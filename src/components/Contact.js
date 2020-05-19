@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Content, TextBox, CopyText } from './Gridbox';
-import logo from '../assets/logo.svg';
-import spin from '../animations';
+import hold from '../assets/placeholder.png';
 
-// const Picture = styled.img`
-//   height: 500px;
-//   width: 500px;
-// `;
+const Placeholder = styled.img`
+  width: 600px;
+  height: auto;
+  align-self: center;
+`;
 
 const Text = styled(CopyText)`
   color: #e7ef93;
@@ -21,16 +21,16 @@ const YellowText = styled(GreenText)`
   color: #e7ef93;
 `;
 
-const Logospin = styled.img`
-  height: 40vmin;
-  pointer-events: none;
-  animation: ${spin} infinite 5s linear;
-`;
+// const Logospin = styled.img`
+//   height: 40vmin;
+//   pointer-events: none;
+//   animation: ${spin} infinite 5s linear;
+// `;
 
 export default function Contact() {
   return (
     <Content>
-      <Logospin src={logo} alt="logo" />
+      <Placeholder src={hold} alt="logo" />
       <TextBox>
         <h2>
           <span>const</span> lydia <span>&#61;</span> contact.
