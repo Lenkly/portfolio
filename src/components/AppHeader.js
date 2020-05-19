@@ -9,7 +9,8 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 55px;
-  height: 100px;
+  padding-bottom: 10px;
+  height: 70px;
   width: 100%;
   background: #282936;
   position: fixed;
@@ -17,7 +18,6 @@ const Header = styled.header`
 
 const Title = styled.div`
   font-family: 'Helvetica Neue';
-  text-transform: uppercase;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.7);
 `;
@@ -40,7 +40,7 @@ const Link = styled.button`
 function AppHeader() {
   return (
     <Header>
-      <Title>Lydia Lenk</Title>
+      <Title>lydia lenk</Title>
       <Links>
         <Link>
           <a

@@ -5,20 +5,15 @@ import Idea from './components/Idea';
 import Design from './components/Design';
 import Development from './components/Development';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
-
-// const Logospin = styled.img`
-//   height: 40vmin;
-//   pointer-events: none;
-//   animation: ${spin} infinite 5s linear;
-// `;
 
 function App() {
   return (
     <div>
       <AppHeader />
       <main>
-        <h1 className="heading">
+        <h1>
           <span>web</span>developer
         </h1>
         <About />
@@ -31,9 +26,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          You shouldn't go there. Really.
+          Don't click me.
         </a>
       </main>
+      <Footer />
     </div>
   );
 }

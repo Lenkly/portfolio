@@ -1,40 +1,51 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Content, TextBox, CopyText } from './Gridbox';
+import logo from '../assets/logo.svg';
+import spin from '../animations';
 
-const Content = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+// const Picture = styled.img`
+//   height: 500px;
+//   width: 500px;
+// `;
+
+const Text = styled(CopyText)`
+  color: #e7ef93;
+  margin-left: 0;
 `;
 
-const TextBox = styled.div`
-  align-items: center;
+const GreenText = styled.span`
+  color: #59df7c;
+`;
+const YellowText = styled(GreenText)`
+  color: #e7ef93;
+`;
+
+const Logospin = styled.img`
+  height: 40vmin;
+  pointer-events: none;
+  animation: ${spin} infinite 5s linear;
 `;
 
 export default function Contact() {
   return (
     <Content>
-      <div>hallo</div>
+      <Logospin src={logo} alt="logo" />
       <TextBox>
         <h2>
-          <span>&#123; </span>get a grip!<span> &#125;</span>
+          <span>const</span> lydia <span>&#61;</span> contact.
+          <GreenText>dev</GreenText>
+          <YellowText>`</YellowText>
         </h2>
         <p>
-          &lt;<span>p</span>&gt; Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-          Lorem ipsum dolor sit amet. &lt;/<span> p</span>
-          &gt;
+          <Text>
+            Located in Düsseldorf, Germany, but used to work remote - so you can
+            call me up any time!
+          </Text>
         </p>
+        <h2>
+          <YellowText>`;</YellowText>
+        </h2>
       </TextBox>
     </Content>
   );
