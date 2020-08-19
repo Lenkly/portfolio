@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Content, TextBox, CopyText } from './Gridbox';
 import hold from '../assets/placeholder.png';
+import Fade from 'react-reveal/Fade';
 
 const Placeholder = styled.img`
   width: 600px;
@@ -31,22 +32,24 @@ export default function Contact() {
   return (
     <Content>
       <Placeholder src={hold} alt="logo" />
-      <TextBox>
-        <h2>
-          <span>const</span> lydia <span>&#61;</span> contact.
-          <GreenText>dev</GreenText>
-          <YellowText>`</YellowText>
-        </h2>
-        <p>
-          <Text>
-            Located in Düsseldorf, Germany, but used to work remote - so you can
-            call me up any time!
-          </Text>
-        </p>
-        <h2>
-          <YellowText>`;</YellowText>
-        </h2>
-      </TextBox>
+      <Fade bottom>
+        <TextBox>
+          <h2>
+            <span>const</span> lydia <span>&#61;</span> contact.
+            <GreenText>dev</GreenText>
+            <YellowText>`</YellowText>
+          </h2>
+          <p>
+            <Text>
+              Located in Düsseldorf, Germany, but used to work remote - so you
+              can call me up any time!
+            </Text>
+          </p>
+          <h2>
+            <YellowText>`;</YellowText>
+          </h2>
+        </TextBox>
+      </Fade>
     </Content>
   );
 }
