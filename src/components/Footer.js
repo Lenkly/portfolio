@@ -13,6 +13,29 @@ const FooterBox = styled.footer`
   background-color: rgba(0, 0, 0, 0.3);
 `;
 
+const ScrollButton = styled.button`
+// position: absolute;
+width: 40px;
+height: 40px;
+border: none;
+border-radius: 10px;
+color: white;
+background-color: rgba(255, 255, 255, 0.3);
+box-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
+&:hover {
+  transition: 0.1s all linear;
+  transform: translateY(-2px);
+}
+`;
+
 export default function Footer() {
-  return <FooterBox>Hello!</FooterBox>;
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  return <FooterBox>
+    Made with ♥︎
+<ScrollButton onClick={scrollToTop}>UP</ScrollButton>
+  </FooterBox>;
 }
