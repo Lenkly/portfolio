@@ -11,31 +11,35 @@ const FooterBox = styled.footer`
   font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
 `;
 
 const ScrollButton = styled.button`
-// position: absolute;
-width: 40px;
-height: 40px;
-border: none;
-border-radius: 10px;
-color: white;
-background-color: rgba(255, 255, 255, 0.3);
-box-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
-&:hover {
-  transition: 0.1s all linear;
-  transform: translateY(-2px);
-}
+  position: absolute;
+  bottom: 17.5px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
+  &:hover {
+    transition: 0.1s all linear;
+    transform: translateY(-2px);
+  }
 `;
 
 export default function Footer() {
-
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-  return <FooterBox>
-    Made with ♥︎
-<ScrollButton onClick={scrollToTop}>UP</ScrollButton>
-  </FooterBox>;
+  return (
+    <FooterBox>
+      Made with ♥︎
+      <ScrollButton onClick={scrollToTop}>UP</ScrollButton>
+    </FooterBox>
+  );
 }
