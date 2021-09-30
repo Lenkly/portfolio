@@ -20,13 +20,12 @@ export default function About() {
         <p>
           &lt;<span>p</span>&gt;
           <CopyText>
-            While I recently graduated coding bootcamp to become a web
-            developer, I always had a passion for webdesign and ... I've run
-            blogs on wordpress and blogger for years, always trying to customize
-            blog themes to the max. In recent years and after graduating
-            university with a master's degree, I worked in marketing departments
-            and partnered up with agencies to generate the perfect web ... for
-            the client.
+            Graduating university with a master's degree in Customer
+            Relationship Management and coming from a marketing background I
+            always had a thing for web design, web technologies and good content
+            as well as an eye for detail. I recently changed career paths to
+            follow my passion to become a web developer and now work fulltime as
+            a frontend engineer.
           </CopyText>
           &lt;/<span> p</span>
           &gt;

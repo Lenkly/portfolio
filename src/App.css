@@ -32,6 +32,8 @@ main {
 h1 {
   font-size: 120px;
   color: white;
+  line-height: normal;
+  margin: 0;
 }
 span {
   color: #f484c5;
@@ -56,7 +58,7 @@ p {
   color: white;
   font-kerning: normal;
 }
-/* 
+
 .fade-in-section {
   opacity: 0;
   transform: translateY(20vh);
@@ -68,4 +70,4 @@ p {
   opacity: 1;
   transform: none;
   visibility: visible;
-} */
+}

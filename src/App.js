@@ -7,15 +7,14 @@ import Development from './components/Development';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
+import Introduction from './components/Introduction';
 
 function App() {
   return (
     <div>
       <AppHeader />
       <main>
-        <h1>
-          <span>web</span>developer
-        </h1>
+        <Introduction />
         <About />
         <Idea />
         <Design />

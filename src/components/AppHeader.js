@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from '@emotion/styled';
 import Octocat from '../assets/Octocat';
 import LinkedIn from '../assets/LinkedIn';
@@ -14,6 +14,7 @@ const Header = styled.header`
   width: 100%;
   background: #282936;
   position: fixed;
+  z-index: 100;
 `;
 
 const Title = styled.div`
@@ -37,10 +38,12 @@ const Link = styled.button`
   }
 `;
 
-function AppHeader() {
+const AppHeader = () => {
+  const headerRef = useRef(null);
+
   return (
     <Header>
-      <Title>lydia lenk</Title>
+      <Title ref={headerRef}>Lydia Lenk</Title>
       <Links>
         <Link>
           <a
@@ -72,6 +75,6 @@ function AppHeader() {
       </Links>
     </Header>
   );
-}
+};
 
 export default AppHeader;
