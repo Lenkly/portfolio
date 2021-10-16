@@ -21,6 +21,7 @@
 .link {
   display: flex;
   margin-right: inherit;
+  align-items: center;
 }
 
 .link button {

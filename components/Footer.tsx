@@ -2,7 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Footer.module.css';
 
-const Footer = (): JSX.Element => {
+type FooterProps = {
+  footerImage: string;
+};
+
+const Footer = ({ footerImage }: FooterProps): JSX.Element => {
   const scrollToTop = () => {
     if (window && typeof window !== undefined) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -12,7 +16,12 @@ const Footer = (): JSX.Element => {
     <footer className={styles.footer}>
       Made with ♥︎
       <button className={styles.button} onClick={scrollToTop}>
-        <Image src="/up-arrow.svg" alt="" width={40} height={40} />
+        <Image
+          src={footerImage}
+          alt=""
+          layout="responsive"
+          objectFit="contain"
+        />
       </button>
     </footer>
   );

@@ -9,12 +9,19 @@
   margin: 0 55px 20px;
 }
 
-.introduction {
+.container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  padding: 2.5%;
 }
 
 .title a {

@@ -1,0 +1,20 @@
+.textbox {
+  align-items: center;
+  line-height: 1.5;
+}
+
+.textbox span {
+  color: #f484c5;
+}
+
+.copytext {
+  margin-left: 25px;
+}
+
+.styledtext {
+  color: #e7ef93 !important;
+}
+
+.greentext {
+  color: #59df7c !important;
+}

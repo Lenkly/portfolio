@@ -19,7 +19,6 @@
   border: none;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
 }
 
 .button:hover {
